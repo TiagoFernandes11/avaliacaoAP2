@@ -4,12 +4,8 @@ import java.util.Arrays;
 
 public class IntersectionArrayInt {
     private int[] result;
-    private int[] arrayOne;
-    private int[] arrayTwo;
 
     public IntersectionArrayInt(int[] arrayOne, int[] arrayTwo) {
-        this.arrayOne = arrayOne;
-        this.arrayTwo = arrayTwo;
         int intersectionCount = 0;
 
         for (int i = 0; i < arrayOne.length; i++) {
