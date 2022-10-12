@@ -7,6 +7,7 @@ public class IntInput {
     private Scanner scanner = new Scanner(System.in);
     private int[] result;
     private int[] rawInput;
+    private int[] filtredArray = new int[removeNullValues(result).length];
 
     
     
@@ -23,6 +24,7 @@ public class IntInput {
             }
             
         }
+        filtredArray = removeNullValues(result);
         
     }
 
@@ -57,8 +59,7 @@ public class IntInput {
 
     @Override
     public String toString() {
-        int[] filtredArray = new int[removeNullValues(result).length];
-        filtredArray = removeNullValues(result);
+        
         return  "vetor inicial: \n" + Arrays.toString(rawInput) + "\n\nVetor final: \n" + Arrays.toString(filtredArray);
         }
 
