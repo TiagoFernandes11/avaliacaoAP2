@@ -32,5 +32,8 @@ public class Program {
         System.out.println("Vetor gerado: \n" + randomArray + "\n");
         
         System.out.println(new IntersectionArrayInt(randomArray.getResult(), inputArray.getResult()));
+        sc.close();
+
     }
+
 }
