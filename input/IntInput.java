@@ -7,7 +7,7 @@ public class IntInput {
     private Scanner scanner = new Scanner(System.in);
     private int[] result;
     private int[] rawInput;
-    private int[] filtredArray = new int[removeNullValues(result).length];
+    private int[] filtredArray;
 
     
     
@@ -55,13 +55,30 @@ public class IntInput {
         return false;
         
     }
+    
 
 
     @Override
     public String toString() {
         
-        return  "vetor inicial: \n" + Arrays.toString(rawInput) + "\n\nVetor final: \n" + Arrays.toString(filtredArray);
+        return  Arrays.toString(getFiltredArray());
         }
+
+    public Scanner getScanner() {
+        return scanner;
+    }
+
+    public int[] getResult() {
+        return result;
+    }
+
+    public int[] getRawInput() {
+        return rawInput;
+    }
+
+    public int[] getFiltredArray() {
+        return filtredArray;
+    }
 
     
     

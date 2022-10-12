@@ -7,12 +7,9 @@ public class RandomIntegerArrayGen {
 
     private Random rdn = new Random();
 
-    private int number;
-
     public int[] result;
 
     public RandomIntegerArrayGen(int number) {
-        this.number = number;
         result = new int[number];
         for(int i = 0; i < number; i++){
             result[i] = rdn.nextInt(99);
@@ -22,7 +19,15 @@ public class RandomIntegerArrayGen {
 
     @Override
     public String toString() {
-        return Arrays.toString(result) + "";
+        return Arrays.toString(result);
+    }
+
+    public Random getRdn() {
+        return rdn;
+    }
+
+    public int[] getResult() {
+        return result;
     }
 
     
